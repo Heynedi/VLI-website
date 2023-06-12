@@ -1,13 +1,137 @@
 /* styles.css */
 
-html {
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@400;700&display=swap');
+
+/* shortcut */
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
+/* all */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header */
+
 header {
-    height: 200px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    background-color: black;
+    height: 80px;
+    background: rgb(105,0,97);
+    background: linear-gradient(90deg, rgba(105,0,97,0.7) 0%, rgba(21,18,133,0.7) 52%, rgba(87,84,209,0.7) 100%);
+}
+
+header h1 {
+    font-family: 'Grand Hotel', cursive;
+    color: white;
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+/* main nav */
+
+.main-nav {
+    background: rgb(105,0,97);
+    background: linear-gradient(90deg, rgba(105,0,97,0.7) 0%, rgba(21,18,133,0.7) 52%, rgba(87,84,209,0.7) 100%);
+}
+
+.wave-container {  
+    height: 6vh;
+    background: rgb(105,0,97);
+    background: linear-gradient(90deg, rgba(105,0,97,0.7) 0%, rgba(21,18,133,0.7) 52%, rgba(87,84,209,0.7) 100%);
+    position: relative;
+  }
+  
+  .wave-container::before {   
+    content: "";
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 0vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 80' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0C22.4434 -1 28.9842 1 55 14C94.1849 32 121.997 34 158.5 34C198.5 36 200 26 240 31C280 35 320 53 360 53C400 53 440 35 480 32C520 29 560 41 600 50C640 59 680 65 720 68C760 71 800 71 840 62C880 53 920 35 960 37C1000 38 1040 59 1080 56C1120 53 1127.5 35 1147.5 22C1171.48 7 1185.65 0 1200 0V80H1180C1160 80 1120 80 1080 80C1040 80 1000 80 960 80C920 80 880 80 840 80C800 80 760 80 720 80C680 80 640 80 600 80C560 80 520 80 480 80C440 80 400 80 360 80C320 80 280 80 240 80C200 80 160 80 120 80C80 80 40 80 20 80H0V0.0103865Z' fill='%23ffffff'/></svg>");
+  }
+
+.nav-content {
+    display: flex;
+    padding: 10px 30% 7px 30%;
+    list-style-type: none;
+    justify-content: space-between;
     color: white;
 }
+
+.nav-content a {
+    padding: 5px 10px 5px 10px;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.nav-content a:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    box-shadow: -3px -3px  rgba(255, 255, 255, 0.5);  
+}
+
+.nav-content a.active {
+    border-radius: 15px;
+    background-color: white;
+    color: blueviolet;
+}
+
+
+/* fotter */
+
+footer {
+    background-color: #1D1D1D;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 3% 10% 3% 10%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-segment {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-left: #8D8D8D 2px solid;
+    padding-left: 5px;
+}
+
+.footer-line {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.footer-line img {
+    max-height: 70%;
+    margin: 2px;
+}
+
+.footer-segment h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
