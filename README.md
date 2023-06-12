@@ -7,7 +7,7 @@ Ce projet vise à créer un site pour l'association Visibilisons l'invisible (VL
   - la présentation des créations de l'association (artisanat fait-main)
   - (à venir) la présentation sous format d'articles des actions réalisés par VLI
 
-Ce projet prendra fin quand le site sera terminé, hebergé et accessibler depuis internet.
+Ce projet prendra fin quand le site sera terminé, hebergé et accessible depuis internet.
 L'association étant sans cesse vouée à des changements, le site suivra ce mouvement dans le but d'être à jour.
 
 
